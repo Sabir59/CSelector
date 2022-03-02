@@ -33,8 +33,11 @@ class CSelector {
 
     selector.addEventListener("click", (event) => {
       optionGroup.classList.toggle(this.style[3]);
-      label.innerText = event.target.innerText;
-      input.value = event.target.innerText;
+
+      if (event.target.id != this.core[0]) {
+        label.innerText = event.target.innerText;
+        input.value = event.target.innerText;
+      }
     });
   }
 
