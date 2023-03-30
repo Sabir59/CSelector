@@ -2,6 +2,7 @@ class CSelector {
   constructor(core, style) {
     this.core = core;
     this.style = style;
+    this.coreHandler();
   }
 
   coreHandler() {
@@ -40,13 +41,9 @@ class CSelector {
       }
     });
   }
-
-  init() {
-    return this.coreHandler();
-  }
 }
 
-const selector = new CSelector(
+new CSelector(
   [
     "c-selector",
     "Select",
@@ -56,5 +53,3 @@ const selector = new CSelector(
   ],
   ["label", "option-group", "option", "show-options"]
 );
-
-selector.init();
