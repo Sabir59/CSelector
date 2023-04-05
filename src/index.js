@@ -45,13 +45,6 @@ class CSelector {
   }
 }
 
-new CSelector(
-  [
-    "c-selector",
-    "Select",
-    "c-selector__input",
-    "c-selector",
-    ["Download", "Install", "Upload"],
-  ],
-  ["label", "option-group", "option", "show-options"]
-);
+module.exports = {
+  all: CSelector,
+};
