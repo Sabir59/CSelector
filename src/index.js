@@ -45,6 +45,7 @@ class CSelector {
   }
 }
 
+// Module exported
 module.exports = {
   all: CSelector,
 };
