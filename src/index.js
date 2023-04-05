@@ -46,6 +46,6 @@ class CSelector {
 }
 
 // Module exported
-module.exports = {
-  all: CSelector,
-};
+// module.exports = {
+//   all: CSelector,
+// };
