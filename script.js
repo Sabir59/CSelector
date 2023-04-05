@@ -8,12 +8,14 @@ class CSelector {
   coreHandler() {
     const selector = document.getElementById(this.core[0]);
     const optionGroup = document.createElement("div");
-    const label = document.createElement("p");
+    const label = document.createElement("label");
     const input = document.createElement("input");
 
+    selector.classList.add(this.core[0]);
     optionGroup.classList.add(this.style[1]);
     label.textContent = this.core[1];
     label.className = this.style[0];
+    label.setAttribute("for", this.core[2]);
 
     input.type = "hidden";
     input.name = this.core[3];

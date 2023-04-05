@@ -8,7 +8,7 @@
 body {
   font-family: sans-serif;
 }
-#c-selector {
+.c-selector {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +22,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
-#c-selector::after {
+.c-selector::after {
   content: "";
   display: block;
   height: 10px;
